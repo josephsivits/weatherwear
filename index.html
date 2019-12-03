@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+
+
+
+    <body>
+        <h1 class="siteHeader">WeatherWear</h1>
+        <div class="siteHeader">Wear for the Weather.</div>
+        <br>
+        <div id="searchContainer">
+            <input class="searchControl" type="text" placeholder="Zip Code" id="searchInput">
+            <button  class="searchControl" id="searchBtn">Search!</button>
+        </div>
+
+        <br>
+        
+        <br>
+
+
+
+        <div id="weatherContainer">
+            <div id="recommendedWear" class="recWear"></div>
+            <div id = "weatherDesc">
+                <h1 id = cityHeader></h1>
+                <div id="weatherMain">
+                    <div id="temp"></div>
+                    <div id="weatherDescHeader"></div>
+                    <div><img id="documentIconImg"></div>
+                </div>
+                <hr>
+                <div id="windSpeed" class="bottomDetails"></div>
+                <div id="humidity" class="bottomDetails"></div>
+            </div>
+        </div>
+        <script src = script.js></script>
+
+        
+        
+        <script>
+            //jQuery
+            document.getElementById("searchBtn").addEventListener("click", fadeContainer);
+
+            function fadeContainer() {
+                $(document.getElementById("weatherContainer")).hide();
+                $(document.getElementById("weatherContainer")).fadeIn(600);
+            }
+        </script>
+
+    </body>
+</html>

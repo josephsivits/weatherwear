@@ -1,0 +1,14 @@
+h1 {
+    text-align: center;
+}
+div {
+    text-align: center;
+}
+
+div.siteHeader {
+    font-style: italic;
+}
+
+div.recWear {
+    font-size: 1.5em;
+}
